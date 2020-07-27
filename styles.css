@@ -1,0 +1,134 @@
+body {
+  text-align: center;
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: 'Arvo', cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+p {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 2rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #f3286c;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: block;
+  width: 75%;
+  text-align: center;
+  margin: 2rem auto;
+  background-color: white;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+footer a {
+  color: #dbedf3;
+}
+
+.title-icon {
+  width: 7rem;
+  height: 7rem;
+  vertical-align: bottom;
+}
+
+.a {
+  background: url(images/png/027-drum.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.s {
+  background: url(images/png/027-drum.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.d {
+  background: url(images/png/027-drum.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.f {
+  background: url(images/png/027-drum.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.g {
+  background: url(images/png/018-flute-1.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.h {
+  background: url(images/png/040-tambourine.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.j {
+  background: url(images/png/040-tambourine.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.k {
+  background: url(images/png/017-melodica.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.l {
+  background: url(images/png/029-cymbals.png) no-repeat center center;
+  background-size: 7rem 7rem;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.row {
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  font-weight: 900;
+  color: #f3286c;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  width: 8rem;
+  margin: 0.5rem;
+}
