@@ -1,5 +1,11 @@
 var buttons = document.querySelectorAll('.drum');
 
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
+
 //Code for mouseclicks
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function () {
@@ -77,8 +83,4 @@ function buttonAnimation(currentKey) {
   }, 100);
 }
 
-if ('addEventListener' in document) {
-    document.addEventListener('DOMContentLoaded', function() {
-        FastClick.attach(document.body);
-    }, false);
-}
+
