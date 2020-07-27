@@ -76,3 +76,9 @@ function buttonAnimation(currentKey) {
     activeButton.classList.remove('pressed');
   }, 100);
 }
+
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
