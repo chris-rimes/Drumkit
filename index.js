@@ -1,18 +1,22 @@
 var buttons = document.querySelectorAll('.drum');
-var isPlaying = false;
 
+//Code for mouseclicks
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function () {
     var buttoninnerHTML = this.innerHTML;
 
     makeSound(buttoninnerHTML);
+    buttonAnimation(buttoninnerHTML);
   });
 }
 
+//Code for keypress
 document.addEventListener('keydown', function (event) {
   makeSound(event.key);
+  buttonAnimation(event.key);
 });
 
+// function to create and play sounds
 function makeSound(key) {
   switch (key) {
     case 'a':
@@ -22,21 +26,17 @@ function makeSound(key) {
 
     case 's':
       var audio = new Audio('sounds/808s/Uzi-C.wav');
-      audio.volume = 0.9;
       audio.play();
       break;
 
     case 'd':
       var audio = new Audio('sounds/808s/Uzi-D.wav');
       audio.play();
-      audio.volume = 0.9;
       break;
 
     case 'f':
       var audio = new Audio('sounds/808s/Uzi-E.wav');
-      audio.pause;
       audio.play();
-      audio.volume = 0.9;
       break;
 
     case 'g':
@@ -67,4 +67,12 @@ function makeSound(key) {
     default:
       console.log(event.key);
   }
+}
+
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector('.' + currentKey);
+  activeButton.classList.add('pressed');
+  setTimeout(function () {
+    activeButton.classList.remove('pressed');
+  }, 100);
 }
